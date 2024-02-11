@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+		<link href="css/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	</head>
+	<body>
+		<ul class="skip-links">
+			<!--added skip links at the top of the page-->
+			<li><a href="#nav">Skip to main nav</a></li>
+			<li><a href="#main">Skip to main content</a></li>
+		</ul>
+		<nav class="navbar navbar-expand-md px-3" role="navigation"><!--nav bar is taken from bootstrap-->
+			<div class="container-fluid">
+				<!-- Brand/logo -->
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logoimg.png" alt="logo image" class="logoimg">
+				</a>				  
+				<!-- hamburger button  -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav d-flex ms-auto justify-content-center">
+						<!-- Added justify-content-center class to center the menu -->
+						<li class="nav-item fw-semibold fs-5"><a class="nav-link" href="index.html">HOME</a></li>
+						<li class="nav-item fw-semibold fs-5"><a class="nav-link" href="about.html">ABOUT</a></li>
+						<li class="nav-item fw-semibold fs-5"><a class="nav-link" href="works.html">WORKS</a></li>
+						<li class="nav-item fw-semibold fs-5"><a class="nav-link" href="contacts.html">CONTACTS</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<header>
+			<div class="banner" role="main">
+				<h1 class="position-absolute mb-5">
+					<span>FIND YOUR</span>
+					<span>IDEA</span>
+				</h1>
+				<svg viewBox="0 0 3900 2300" role="img" aria-label="banner img" class="banner-dekstop">
+					<image xlink:href="images/banner-dekstop1.svg" width="100%" height="100%"/>
+				</svg>
+				<svg viewBox="0 0 2800 2400" role="img" aria-label="banner img" class="banner-tablet">
+					<image xlink:href="images/banner-tablet.svg" width="100%" height="100%"/>
+				</svg>
+				<svg viewBox="0 0 2900 3000" role="img" aria-label="banner img" class="banner-tablet2">
+					<image xlink:href="images/banner-tablet2.svg" width="100%" height="100%"/>
+				</svg>
+				<svg viewBox="0 0 2400 3400" role="img" aria-label="banner img" class="banner-mobile">
+					<image xlink:href="images/banner-mobile.svg" width="100%" height="100%"/>
+				</svg>
+			</div>
+		</header>
+		<div class="graybox pt-5">
+			<div class="container d-flex flex-column justify-content-center align-items-center">
+				<h2 class="display-4 fw-bold animate__animated animate__zoomInDown fs-2">SERVICES</h2>
+				<p class="text-center p-5 fs-5">
+					Find the ideal solution for your project with us! We specialize in providing a wide range of services in graphic and web design, photography, and video editing. Explore our website to learn more about our services and
+					browse through our portfolio of work. We are eager to come up with a fresh and creative idea specifically for you.
+				</p>
+				<button type="submit" onclick="location.href='works.html'" role="button">LEARN MORE</button>
+			</div>
+			<section class="container mt-4 py-3">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 mb-4 text-center services"> <!--  col-md-12 on medium and small screens, the elements occupy one column-->
+						<img class="img-border p-5 bg-white" src="images/illustration.svg" alt="Illustration icon">
+						<h3 class="pt-3 fs-5 fw-semibold">ILLUSTRATION</h3>
+					</div>
+					<div class="col-lg-4 col-md-12 mb-4 text-center services"> <!--col-lg-4 the element occupies 1/3 of the width of the container on large screens.-->
+						<img class="img-border p-5 bg-white" src="images/photography.svg" alt="Photography icon">
+						<h3 class="pt-3 fs-5 fw-semibold">PHOTOGRAPHY</h3>
+					</div>
+					<div class="col-lg-4 col-md-12 mb-4 text-center services">
+						<img class="img-border p-5 bg-white" src="images/webdesign.svg" alt="Web design icon">
+						<h3 class="pt-3 fs-5 fw-semibold">WEB DESIGN</h3>
+					</div>
+				</div>
+			</section>
+			<footer class="text-center p-4" role="contentinfo">
+				<div class="d-flex flex-column align-items-center">
+				  <a href="#top">
+					<i class="fa-regular fa-circle-up fa-xl mb-4"></i>
+				  </a>
+				  <span>Copyright Viktoria</span>
+				</div>
+			  </footer>			  
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+

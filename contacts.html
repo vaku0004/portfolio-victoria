@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contacts</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<link href="css/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	</head>
+	<body class="contactpage">
+		<ul class="skip-links">
+			<!--added skip links at the top of the page-->
+			<li><a href="#nav">Skip to main nav</a></li>
+			<li><a href="#main">Skip to main content</a></li>
+		</ul>
+		<nav class="navbar navbar-expand-md px-3" role="navigation"><!--nav bar is taken from bootstrap-->
+			<div class="container-fluid">
+				<!-- Brand/logo -->
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logoimg.png" alt="logo image" class="logoimg">
+				</a>
+				<!-- hamburger button  -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav d-flex ms-auto justify-content-center">
+						<!-- Added justify-content-center class to center the menu -->
+						<li class="nav-item fw-semibold fs-5"><a class="nav-link" href="index.html">HOME</a></li>
+						<li class="nav-item fw-semibold fs-5"><a class="nav-link" href="about.html">ABOUT</a></li>
+						<li class="nav-item fw-semibold fs-5"><a class="nav-link" href="works.html">WORKS</a></li>
+						<li class="nav-item fw-semibold fs-5"><a class="nav-link" href="contacts.html">CONTACTS</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid mb-3 pb-5 ps-5">
+			<div class="row">
+				<div class="col-lg-6 p-5">
+					<h3 class="contact fw-semibold">CONTACT ME</h3>
+					<form aria-label="Contact Form">
+						<div>
+							<label for="inputName" class="form-label">Your Name</label>
+							<input type="text" class="form-control" id="inputName" required role="textbox">
+						</div>
+						<div class="mb-3">
+							<label for="inputEmail" class="form-label">Your Email</label>
+							<input type="email" class="form-control" id="inputEmail" required role="textbox">
+						</div>
+						<div class="mb-3">
+							<label for="inputDescription" class="form-label">Description</label>
+							<textarea class="form-control rounded" id="inputDescription" rows="8" required role="textbox"></textarea>
+						</div>
+						<div class="d-flex justify-content-end pt-3">
+							<!-- add div with classes d-flex, justify-content-end for button -->
+							<button type="submit" onclick="location.href='about.html'" role="button">SEND</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-6 mx-n5 pb-3"> <!--col-lg-6 means that the element occupies half the width of the container on large screens-->
+					<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 1312 960" viewBox="0 0 1312 960" class="mouse">
+						<path d="M335 286c-3.4-18-6.8-49.5 3-86 14.8-55.2 52.1-92.9 81-112 83.8-55.3 190.4-42.7 259 19 40 36 66.2 59.5 174 211 67.8 95.2 110.4 139.3 144 162 88.7 59.9 221.4 90.4 300 25 10.7-8.9 35.1-35.4 58-54 22.5-18.2 26.8-25.6 44-29" style="fill:none;stroke:#4d4d4d;stroke-width:20;stroke-miterlimit:10"/>
+						<path class="my-path1" d="M372.2 939h-60.5C189.8 939 90 839.2 90 717.2V443.8c0-122 99.8-221.8 221.8-221.8h60.5c122 0 221.8 99.8 221.8 221.8v273.5C594 839.2 494.2 939 372.2 939z" style="fill:#0c1153"/>
+						<path class="mouse-body" d="M362.2 925h-60.5C179.8 925 80 825.2 80 703.2V429.8c0-122 99.8-221.8 221.8-221.8h60.5c122 0 221.8 99.8 221.8 221.8v273.5C584 825.2 484.2 925 362.2 925z"/>
+						<path d="M352 229.6v163.1c0 9.2-7.6 16.8-16.8 16.8-9.2 0-16.8-7.6-16.8-16.8V229.6c0-9.2 7.6-16.8 16.8-16.8 9.2.1 16.8 7.6 16.8 16.8z" style="fill:#ccc"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<footer class="text-center p-4" role="contentinfo">
+			<div class="d-flex flex-column align-items-center">
+			  <a href="#top">
+				<i class="fa-regular fa-circle-up fa-xl mb-3"></i>
+			  </a>
+			  <span>Copyright Viktoria</span>
+			</div>
+		</footer>	
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	</body>
+</html>

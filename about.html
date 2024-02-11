@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>About</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+		<link href="css/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	</head>
+	<body class="aboutpage">
+		<ul class="skip-links">
+			<!--added skip links at the top of the page-->
+			<li><a href="#nav">Skip to main nav</a></li>
+			<li><a href="#main">Skip to main content</a></li>
+		</ul>
+		<nav class="navbar navbar-expand-md px-3 bg-white" role="navigation"><!--nav bar is taken from bootstrap-->
+			<div class="container-fluid">
+				<!-- Brand/logo -->
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logoimg.png" alt="logo image" class="logoimg">
+				</a>
+				<!-- hamburger button  -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav d-flex ms-auto justify-content-center">
+						<!-- Added justify-content-center class to center the menu-->
+						<li class="nav-item fw-semibold fs-5"><a class="nav-link" href="index.html">HOME</a></li>
+						<li class="nav-item fw-semibold fs-5"><a class="nav-link" href="about.html">ABOUT</a></li>
+						<li class="nav-item fw-semibold fs-5"><a class="nav-link" href="works.html">WORKS</a></li>
+						<li class="nav-item fw-semibold fs-5"><a class="nav-link" href="contacts.html">CONTACTS</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div>
+			<div class="container-fluid pt-5 about-container greybox">
+				<div class="row">
+					<div class="col-lg-6 m-1 about order-2 order-lg-1"> <!--order-lg-1 this code allowed me to change the elements in order on the big screen-->
+						<img class="animate__animated animate__bounceInLeft about-img" src="images/about-img.JPG" alt="image about me">
+					</div>
+					<div class="col-lg-5 about-p order-1 order-lg-2">
+						<h3 class="animate__animated animate__zoomInDown pb-3 fw-semibold">ABOUT ME</h3>
+						<p class="animate__animated animate__bounceInRight fs-5"> <!--I used the codes from the animated website to animate-->
+							My name is Victoria, and I have a passion for animation, illustration, web design, and motion graphics. I aim to bring all these disciplines together to create truly unique and creative projects. That's why I am
+							currently studying Interactive Design at Algonquin College. I hope that my work will inspire you with fresh and creative ideas.
+						</p>
+						<div class="d-flex justify-content-end"> <!--I aligned the button to the edge of the element-->
+							<div class="ml-3">
+								<button class="animate__animated animate__bounceInRight" type="submit" onclick="location.href='contacts.html'" role="button">CONTACT ME!</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex justify-content-end"> <!--a secret button that duplicates the main one and appears only on the specified screen sizes-->
+					<button class="secretb" type="submit" onclick="location.href='contacts.html'" role="button">LEARN MORE</button>
+				</div>
+			</div>
+		</div>
+		<footer class="text-center p-4" role="contentinfo">
+			<div class="d-flex flex-column align-items-center">
+			  <a href="#top">
+				<i class="fa-regular fa-circle-up fa-xl mb-3"></i>
+			  </a>
+			  <span>Copyright Viktoria</span>
+			</div>
+		</footer>	
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	</body>
+</html>
