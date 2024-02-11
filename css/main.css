@@ -1,0 +1,324 @@
+:root {
+  --main-color: #EFEFF1;
+  --orange-color: #f6ab33;
+  --yellow-color: #F3DE54;
+  --dark-color: #3C3A47;
+  --black-color: #333333;
+  --white-color: #ffffff;
+}
+
+body {
+  color: var(--dark-color);
+}
+
+footer {
+  background-color: var(--dark-color);
+  color: var(--orange-color);
+}
+
+.graybox {
+  background-color: var(--main-color);
+}
+
+.nav-link:hover {
+  color: var(--orange-color) 
+}
+
+.mouse-body {
+  fill: #292f63;
+}
+
+.mouse-body:hover {
+  fill: #3b4289;
+}
+
+/*skip links are hidden*/
+.skip-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+}
+
+.mouse {
+  transition: transform 1s ease;
+}
+
+.mouse:hover{
+  transform: translateY(80px);
+}
+/*this code makes the skip link visible and active when the tab button is pressed*/
+.skip-links a:focus {
+  top: 0;
+}
+
+.works img {
+  width: 25vw;
+  height: auto;
+}
+
+.container-lg {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.my-path {
+  fill: #292f63;
+}
+
+h1 {
+  display: none;
+}
+/*I used the code for the borders in css because it didn't work in the bootstrap*/
+.img-border {
+  border:2px solid grey;
+}
+
+.about {
+  padding-left: 8rem;
+  padding-bottom: 5rem;
+}
+
+/*for each page I used my own settings for background color*/
+body.aboutpage {
+  background-image: url('../images/owave.png');
+  background-position: bottom 50px right;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-color: var(--main-color);
+}
+
+body.contactpage {
+  background-image: url('../images/pwave.png');
+  background-position: bottom 50px left;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+}
+
+body.workspage {
+  background-image: url('../images/twowaves.png');
+  background-position: bottom left;
+  background-size: 100% 25%;
+  background-repeat: no-repeat;
+  background-color: var(--white-color);
+}
+
+form, .contact {
+  padding-left: 4rem;
+  padding-bottom: 1rem;
+}
+
+.form-control {
+  background-color: var(--main-color);
+}
+
+.my-path:hover {
+  fill: #34669f;
+}
+
+.my-path {
+  fill: #8aa5c4;
+}
+
+.mouse:active {
+  transform: skewY(350deg);
+  transform: skewX(30deg);
+  transition: width 0.4s ease; 
+  cursor: pointer; 
+}
+
+button, .button-link {
+  border-radius: 1.5rem;
+  width: 8rem;
+  height: 2.5rem;
+  border: 1.5px solid var(--grey-color);
+  color: var(--white-color);
+  background-color: var(--orange-color);
+}
+
+button:hover {
+  background-color: var(--yellow-color);
+  color: var(--dark-color);
+}
+
+.secretb {
+  display: none;
+}
+/*I changed the style of the hamburger menu in css*/
+.navbar-toggler .navbar-toggler-icon {
+  border: none;
+  outline: none;
+  box-shadow: none 
+}
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none 
+}
+.navbar-toggler:hover, .navbar-toggler-icon:hover {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler:focus {
+ /*these codes remove the outline around the hamburger menu*/
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-img {
+  min-width: 350px;
+  width: 70%;
+  height: auto;
+  padding-bottom: 1rem;
+}
+.about-p{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.img-border {
+  width: 70%;
+  height: 70%;
+}
+.logoimg {
+  width: 55px;
+  height: auto;
+}
+
+.img-border {
+  transition: transform 0.4s ease-in-out;
+}
+
+.img-border:hover {
+  transform: scale(1.1); 
+}
+
+footer a {
+  color: var(--orange-color)
+}
+
+footer a:hover {
+  color: var(--yellow-color);
+}
+
+.graybox {
+  background-color: var(--main-color);
+}
+
+/*I made different media quires settings as I have different pictures with light bulbs for each screen*/
+@media (max-width: 997px) {
+
+  body.aboutpage {
+      background-image: url('../images/m-owave.png');
+      background-position: bottom left;
+      background-size: 100% 20%;
+      background-color: var(--main-color);
+ }
+  body.contactpage {
+      background-image: url('../images/m-pwave.png');
+      background-position: bottom left;
+      background-size: 100% 20%;
+ }
+  .about-p button {
+      display: none;
+ }
+  .secretb {
+      display:block;
+      margin-bottom: 35%;
+      margin-right: 15%;
+ }
+  form, .contact {
+      padding-left: 0rem;
+      padding-bottom: 1rem;
+ }
+  .nav-item {
+      text-align: center;
+ }
+  .works img {
+      width: 100%;
+      height: auto;
+ }
+  body.workspage {
+      background-size: 100% 250px;
+ }
+  .img-border {
+      width: 80%;
+      height: auto;
+ }
+  .about-p {
+      padding: 4rem;
+ }
+  .about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+ }
+  .about-img {
+      width: 75%;
+      height: auto;
+      padding-bottom: 5rem;
+ }
+  .about {
+      padding-left: 0;
+      padding-bottom: 0;
+ }
+}
+
+/*for banner-mobile img*/
+@media (max-width: 500px) {
+
+  .banner-tablet, .banner-dekstop, .banner-tablet2 {
+      display: none;
+ }
+  .banner-mobile {
+      width: 100%;
+ }
+ 
+}
+/*for banner-tablet2 img*/
+@media (min-width: 501px) and (max-width: 701px){
+
+  .banner-mobile, .banner-dekstop, .banner-tablet {
+      display: none;
+ }
+}
+
+/*for banner-tablet2 img*/
+@media (min-width: 701px) and (max-width: 901px){
+
+  .banner-mobile, .banner-dekstop, .banner-tablet {
+      display: none;
+ }
+}
+
+/*for banner-tablet img*/
+@media (min-width: 901px) and (max-width: 1301px) {
+  .banner-mobile, .banner-dekstop, .banner-tablet2 {
+      display: none;
+ }
+}
+
+/*for banner-dekstop img*/
+@media (min-width: 1301px){
+
+  .banner-tablet, .banner-tablet2, .banner-mobile {
+      display: none;
+ }
+}
+
+
+
+
+
+

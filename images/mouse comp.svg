@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1659.49 896.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0c1153;
+      }
+
+      .cls-2 {
+        fill: #292f63;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #4d4d4d;
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+      }
+
+      .cls-4 {
+        fill: #ccc;
+      }
+    </style>
+  </defs>
+  <g id="line">
+    <path id="line-2" data-name="line" class="cls-3" d="m256.1,243.18c-4.47-18.01-8.98-49.48,3.96-86,19.56-55.23,68.72-92.93,106.82-112,110.51-55.3,251.11-42.73,341.57,19,52.75,36,87.28,59.54,229.47,211,89.41,95.24,145.57,139.32,189.91,162,117.04,59.87,291.93,90.45,395.64,25,14.09-8.89,46.26-35.44,76.49-54,29.61-18.17,35.39-25.58,58.03-29"/>
+  </g>
+  <g id="rectangle">
+    <rect id="Rectangle" class="cls-1" x="10" y="179.18" width="504" height="717" rx="221.75" ry="221.75"/>
+    <g id="Rectangle-front">
+      <rect class="cls-2" y="165.18" width="504" height="717" rx="221.75" ry="221.75"/>
+    </g>
+  </g>
+  <g id="cursor">
+    <rect class="cls-4" x="156.86" y="251.59" width="196.7" height="33.57" rx="16.79" ry="16.79" transform="translate(-13.17 523.59) rotate(-90)"/>
+  </g>
+</svg>
